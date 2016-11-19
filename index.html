@@ -32,14 +32,20 @@
 
     <link rel="stylesheet" href="css/styles.css">
     <script>
-     document.addEventListener("deviceready", function(){
-      alert("123");
- },true);
+     
+        
+        function init(){
+  document.addEventListener("deviceready", onDeviceReady, false);
+}
+
+function onDeviceReady(){
+  alert('123');
+}
     </script>
    
 </head>
 
-<body onload="shareButton()">
+<body onload="onDeviceReady()">
     <!-- Status bar overlay for full screen mode (PhoneGap) -->
     <div class="statusbar-overlay"></div>
 
