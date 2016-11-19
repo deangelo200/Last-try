@@ -44,15 +44,3 @@ $$(document).on('pageInit', '.page[data-page="about"]', function (e) {
 
 
 
-function init ()
-
-{
-    document.addEventListener("deviceready", shareButton, false);
-}
-
-function shareButton() {
-    
-    alert("It work buddy");
-    
-    
-}
