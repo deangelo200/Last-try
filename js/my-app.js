@@ -52,6 +52,7 @@ function shareButton() {
     text: "This is a test message"
 };
 window.socialmessage.send(message);
+    alert(message);
     
     
 }
