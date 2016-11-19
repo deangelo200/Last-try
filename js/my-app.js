@@ -52,10 +52,6 @@ function init ()
 
 function shareButton() {
     
-    var message = {
-    text: "This is a test message"
-};
-window.socialmessage.send(message);
     alert("It work buddy");
     
     
