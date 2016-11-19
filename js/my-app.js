@@ -44,7 +44,11 @@ $$(document).on('pageInit', '.page[data-page="about"]', function (e) {
 
 
 
-document.addEventListener("deviceready", shareButton, false);
+function init ()
+
+{
+    document.addEventListener("deviceready", shareButton, false);
+}
 
 function shareButton() {
     
@@ -52,7 +56,7 @@ function shareButton() {
     text: "This is a test message"
 };
 window.socialmessage.send(message);
-    alert(message);
+    alert("It work buddy");
     
     
 }
