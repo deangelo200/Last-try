@@ -44,7 +44,7 @@ $$(document).on('pageInit', '.page[data-page="about"]', function (e) {
 
 
 
-document.addEventListener("deviceready", onDeviceReady, false);
+document.addEventListener("deviceready", shareButton, false);
 
 function shareButton() {
     
