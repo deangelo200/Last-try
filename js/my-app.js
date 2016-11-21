@@ -26,11 +26,13 @@ myApp.onPageInit('about', function (page) {
 })
 
 
-    document.addEventListener("deviceready", onDeviceReady, false);
-
-    // device APIs are available
+   // device APIs are available
     function onDeviceReady() {
         alert("device ready event occured");
     }
+
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+ 
   
     
