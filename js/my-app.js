@@ -26,9 +26,3 @@ myApp.onPageInit('about', function (page) {
  
  
   
-function onload(){
-   document.addEventListener("deviceready", function(){
-      alert("123");
- },true);
-}
-
