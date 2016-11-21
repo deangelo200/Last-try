@@ -31,18 +31,7 @@
     <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
 
     <link rel="stylesheet" href="css/styles.css">
-    <script>
-     
-        
-        function init(){
-  document.addEventListener("deviceready", onDeviceReady, false);
-}
 
-function onDeviceReady(){
-  alert('123');
-}
-    </script>
-   
 </head>
 
 <body onload="onDeviceReady()">
@@ -105,6 +94,13 @@ function onDeviceReady(){
    
     <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
     <script type="text/javascript" src="js/my-app.js"></script>
+    <script>
+     document.addEventListener("deviceready", onDeviceReady, false);
+    // device APIs are available
+    function onDeviceReady() {
+        alert("device ready event occured");
+    }
+    </script>
     
 </body>
 
