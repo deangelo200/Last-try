@@ -32,20 +32,19 @@
 
     <link rel="stylesheet" href="css/styles.css">
     <script type="test/javascript" src="js/cordova.js"></script>
-    <script>
-    function onload(){
-   document.addEventListener("deviceready", function(){
-      alert("123");
- },true);
-}
+   <script type="text/javascript" charset="utf-8">
+    $(document).ready(function () {
+         document.addEventListener("deviceready", onDeviceReady, true); 
+    });
 
-
-    </script>
-   
+    function onDeviceReady() {
+        alert ('123');
+    }
+</script>
 
 </head>
 
-<body onload="onload()">
+<body>
     <!-- Status bar overlay for full screen mode (PhoneGap) -->
     <div class="statusbar-overlay"></div>
 
