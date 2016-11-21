@@ -31,20 +31,10 @@
     <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
 
     <link rel="stylesheet" href="css/styles.css">
-    <script type="test/javascript" src="js/cordova.js"></script>
-       <script>
-           
-        function onDeviceReady(){
-          alert('123');
-    }
-            function init(){
-          document.addEventListener("deviceready", onDeviceReady, false);
-        }
 
-    </script>
 </head>
 
-<body onload="onDeviceReady()">
+<body onload="onLoad">
     <!-- Status bar overlay for full screen mode (PhoneGap) -->
     <div class="statusbar-overlay"></div>
 
@@ -103,7 +93,7 @@
 
    
     <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
-  
+    <script type="test/javascript" src="js/cordova.js"></script>
     <script type="text/javascript" src="js/my-app.js"></script>
    
    
