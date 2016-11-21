@@ -32,4 +32,5 @@ function onload(){
 
 function onDeviceReady(){
     alert("It worked");
+    
 }
