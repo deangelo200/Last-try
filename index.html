@@ -10,7 +10,7 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+   
 
     <!-- Required meta tags-->
     <meta charset="utf-8">
@@ -32,11 +32,12 @@
 
     <link rel="stylesheet" href="css/styles.css">
     <script type="test/javascript" src="js/cordova.js"></script>
-    <script type="text/javascript" src="js/my-app.js"></script>
+    <script></script>
+   
 
 </head>
 
-<body onload="onLoad()">
+<body onload="onload()">
     <!-- Status bar overlay for full screen mode (PhoneGap) -->
     <div class="statusbar-overlay"></div>
 
@@ -94,7 +95,8 @@
     </div>
 
    
-    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>'
+     <script type="text/javascript" src="js/my-app.js"></script>
 
    
    
