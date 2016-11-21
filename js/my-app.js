@@ -9,6 +9,17 @@ var $$ = Dom7;
 var mainView = myApp.addView('.view-main', {
     // Because we want to use dynamic navbar, we need to enable it for this view:
     dynamicNavbar: true
+     
+  
+function onload(){
+    document.addEventListener("deviceready", onDeviceReady,false);
+}
+
+function onDeviceReady(){
+    alert("It worked");
+    
+}
+    
 });
 
 // Handle Cordova Device Ready Event
@@ -24,13 +35,3 @@ myApp.onPageInit('about', function (page) {
 
 
  
- 
-  
-function onload(){
-    document.addEventListener("deviceready", onDeviceReady,true);
-}
-
-function onDeviceReady(){
-    alert("It worked");
-    
-}
