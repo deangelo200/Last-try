@@ -27,10 +27,8 @@ myApp.onPageInit('about', function (page) {
  
   
 function onload(){
-    document.addEventListener("deviceready", onDeviceReady,false);
+   document.addEventListener("deviceready", function(){
+      alert("123");
+ },true);
 }
 
-function onDeviceReady(){
-    alert("It worked");
-    
-}
