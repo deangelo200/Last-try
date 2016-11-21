@@ -25,9 +25,9 @@ myApp.onPageInit('about', function (page) {
 
 })
 
-function init() {
+
     document.addEventListener("deviceready", onDeviceReady, false);
-}
+
     // device APIs are available
     function onDeviceReady() {
         alert("device ready event occured");
