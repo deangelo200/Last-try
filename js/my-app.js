@@ -29,5 +29,13 @@ function onLoad() {
 }
 
 function onDeviceReady() {
-   alert("Test 2");
+    
+   function shareButton() {
+    
+    var message = {
+    text: "This is a test message"
+    };
+window.socialmessage.send(message);
+    
+  
 }
