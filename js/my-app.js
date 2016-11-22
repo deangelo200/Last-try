@@ -23,6 +23,13 @@ myApp.onPageInit('about', function (page) {
 })
 
 
- 
+  $(document).ready(function () {
+         document.addEventListener("deviceready", onDeviceReady, false); 
+        alert("Jquery work")
+    });
+
+    function onDeviceReady() {
+        alert ('123');
+    }
  
   
