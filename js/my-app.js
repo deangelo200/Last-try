@@ -22,6 +22,10 @@ myApp.onPageInit('about', function (page) {
 
 })
 
+ var message = {
+    text: "This is a test message"
+    };
+
 
 function onLoad() {
     document.addEventListener("deviceready", onDeviceReady, false);
@@ -32,10 +36,8 @@ function onDeviceReady() {
     
    function shareButton() {
     
-    var message = {
-    text: "This is a test message"
-    };
-window.socialmessage.send(message);
+   
+       window.socialmessage.send(message);
     
   
 }
